@@ -59,8 +59,8 @@ ul li{
     align-items: center;
     cursor: pointer;
     font-size: 24px;
-    text-decoration: none 1px solid rgba(0,0,0,0.3);
-    
+    text-decoration:  1px solid rgba(0,0,0,0.3);
+    color: black;
 }
 .tarefa-concluida {
     text-decoration: line-through;

@@ -15,13 +15,14 @@ $(document).ready(function() {
     $('form').on('submit',function(e) {
         e.preventDefault();
         const novaTarefa = $('#tarefa').val();
-        const novoItem = $('<li></li>');
-        $(`<li>${novaTarefa}</li>`).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
+        const novoItem = $('<li></li>').text(novaTarefa);
+        $('ul').append(novoItem);
 
-        $("li").click(function() {
+        $('ul').on('click', 'li', function() {
             $(this).addClass("tarefa-concluida");
         });
+
+
         $('#tarefa').val("");
     
     })
